@@ -1,0 +1,48 @@
+.navBar{ /*Vista de la barra de navegación sin desplegar*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4a4564;
+    
+    
+}
+
+.navOpen{ /*Vista de la barra de navegación desplegable*/
+    
+    display: flex;
+    position: absolute;  
+    height: 100%;
+    width: 100%;      
+    background-color: #4a4564;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.navLink {      /*Vista del menu desplegable*/
+    display: flex;
+    font-size: 2em; /*Tamaño de la fuente*/
+    font-weight: 400; /*Ancho de la fuente (bold, Semibold, negritras)*/
+    color: #f1f1f1; /*Color de la letra del menu*/
+    padding-top: 90px; /*Separación de letras en menu desplegable*/
+    
+
+}
+
+.border{
+    display: flex;
+    height: 1px;
+    animation-name: animacionborde;
+    animation-duration: 1s;
+    background-color: #a30ab1;
+}
+
+@Keyframes animacionborder{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 1px;
+    }
+}
